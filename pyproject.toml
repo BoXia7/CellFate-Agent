@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellfate_agent"
+version = "0.1.0"
+description = "Autonomous in silico cell fate engineering agent"
+authors = [{ name = "Bo Xia", email = "contact@cellfate.ai" }]
+requires-python = ">=3.10"
+
+[project.dependencies]
+torch = ">=2.0.0"
+transformers = ">=4.40.0"
+biopython = ">=1.80"
+numpy = ">=1.25"
+pandas = ">=2.0"
