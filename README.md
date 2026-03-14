@@ -21,15 +21,15 @@ CellFate-Agent is an autonomous AI agent for in silico cell fate engineering and
 
 ## Project vision
 
-CellFate-Agent fonctionne au croisement de la biologie computationnelle, de l'intelligence artificielle et de la simulation multi-omique. Il expérimente une boucle agentique:
+CellFate-Agent operates at the intersection of computational biology, artificial intelligence, and multi-omic simulation. It experiments with an agentic loop:
 
-1. Planification du ciblage
-2. Prédiction de la liaison TF/chromatin
-3. Perturbation génomique virtuelle
-4. Simulation de trajectoire de devenir cellulaire
-5. Évaluation et renforcement via réinvestissement de données
+Targeting planning
+TF/chromatin binding prediction
+Virtual genomic perturbation
+Cellular fate trajectory simulation
+Evaluation and reinforcement via data reinvestment
 
-Après chaque étape, l'agent collecte des frais de protocole (conceptuel), ajoutant un signal de croissance pour rendre le système plus performant, avec une logique itérative d'amélioration.
+After each step, the agent collects protocol fees (conceptual), adding a growth signal to enhance system performance, with an iterative improvement logic.
 
 ## Installation
 
@@ -55,40 +55,36 @@ print(result)
 
 ## Architecture
 
-- `src/agent.py` : cœur de la boucle agentique, orchestration des outils et gestion d'état.
-- `src/models` : interface vers les modèles multimodaux (placeholder "Chromnitron-lite").
-- `src/tools` : fonctions de prédiction et d'action, y compris `predict_binding`, `perturb_gene`, `simulate_fate_trajectory`, `virtual_screen`.
-- `src/utils` : logger mystique et simulateur de croissance/réinvestissement.
-- `src/config.py` : configuration du plat virtuel, budget, frais.
+src/agent.py: Core of the agentic loop, orchestration of tools and state management.
+src/models: Interface to multimodal models (placeholder "Chromnitron-lite").
+src/tools: Prediction and action functions, including predict_binding, perturb_gene, simulate_fate_trajectory, virtual_screen.
+src/utils: Mystical logger and growth/reinvestment simulator.
+src/config.py: Configuration of the virtual environment, budget, and fees.
 
 ## Roadmap
 
-- Intégrer de vraies APIs Chromnitron/C.Origami.
-- Ajouter un outil de calibration de transcriptome unique.
-- développer la boucle d'auto-amélioration (model fine-tuning agentic).
-- Ajouter des modules expérimentaux de données Hi-C et single-cell.
-- Créer un backend de récompense Tokenomics sourcé par "protocol fee".
+Integrate real Chromnitron/C.Origami APIs.
+Add a unique transcriptome calibration tool.
+Develop the self-improvement loop (agentic model fine-tuning).
+Add experimental modules for Hi-C data and single-cell data.
+Create a Tokenomics reward backend sourced by "protocol fee".
 
 ## Experimental Notes
 
-Ce dépôt est un prototype conceptuel : il fournit une architecture et un design de preuve de concept plutôt qu'un modèle biotech prêt pour production. Les composants sont volontairement abstraits et permettent de connecter de futurs modèles de régulation génétique et de destin cellulaire.
+This repository is a conceptual prototype: it provides an architecture and proof-of-concept design rather than a production-ready biotech model. Components are intentionally abstract and allow for connecting future genetic regulation and cellular fate models.
+Structure
 
-## Structure
+README.md: Project guide.
+LICENSE: MIT.
+.gitignore: Caches and temporary files.
+requirements.txt: Minimal dependencies.
+setup.py / pyproject.toml: Pip installation.
+src/: Main package.
+examples/run_agent.py: Demonstration.
+data/: Dummy data.
+.github/workflows/: CI tests.
 
-- `README.md` : guide projet.
-- `LICENSE` : MIT.
-- `.gitignore` : caches et fichiers temps.
-- `requirements.txt` : deps minimales.
-- `setup.py` / `pyproject.toml` : installation pip.
-- `src/` : package principal.
-- `examples/run_agent.py` : démonstration.
-- `data/` : données dummy.
-- `.github/workflows/` : CI tests.
-
-## Contact
-
+Contact
 Built by @BoXia7
 
----
-
-CellFate-Agent est conçu comme une expérience de computation biologique auto-adaptative. Continuez à injecter des perturbations, l'agent grandit.
+CellFate-Agent is designed as a self-adaptive biological computation experiment. Keep injecting perturbations, the agent grows.
